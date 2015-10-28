@@ -1,0 +1,3 @@
+[submodule "qtdeclarative"]
+	path = qtdeclarative
+	url = git@github.com:qtproject/qtdeclarative.git
