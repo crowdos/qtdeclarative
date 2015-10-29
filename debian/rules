@@ -1,0 +1,19 @@
+#!/usr/bin/make -f
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+%:
+	dh $@ --builddirectory=build --sourcedirectory=qtdeclarative --parallel
+
+override_dh_auto_configure:
+	mkdir build && cd build && qmake ../qtdeclarative/
+
+override_dh_install:
+	rm -f debian/tmp/usr/lib/*.la
+	rm -f debian/tmp/usr/lib/cmake/Qt5Qml/*Plugin.cmake
+	dh_install --fail-missing
+
+override_dh_auto_clean:
+	dh_auto_clean
+	rm -rf build

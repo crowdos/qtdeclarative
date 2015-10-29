@@ -1,0 +1,6 @@
+usr/bin/qmlimportscanner
+usr/bin/qmllint
+usr/bin/qmlmin
+usr/bin/qmlplugindump
+usr/bin/qmlprofiler
+usr/bin/qmltestrunner
