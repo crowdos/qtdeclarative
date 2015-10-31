@@ -54,6 +54,15 @@ Description: Qt 5 Quick Test library
  .
  This package contains the Qt Quick Test library for QtDeclarative module.
 
+Package: libqt5quickwidgets5
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Qt 5 Quick Widgets library
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains the Qt Quick Widgets library for QtDeclarative module.
+
 Package: qml-module-qt-labs-folderlistmodel
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
@@ -152,6 +161,7 @@ Depends: libqt5qml5 (= ${binary:Version}),
          libqt5quick5 (= ${binary:Version}),
          libqt5quickparticles5 (= ${binary:Version}),
          libqt5quicktest5 (= ${binary:Version}),
+         libqt5quickwidgets5 (= ${binary:Version}),
          qtbase5-dev,
          ${misc:Depends}
 Description: Qt 5 declarative development files
