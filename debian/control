@@ -187,7 +187,7 @@ Description: Qt 5 declarative private development files
 Package: qtdeclarative5-dev-tools
 Architecture: any
 Section: devel
-Depends: qtchooser, ${misc:Depends}, ${shlibs:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: Qt 5 declarative development programs
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
@@ -198,7 +198,7 @@ Description: Qt 5 declarative development programs
 Package: qmlscene
 Architecture: any
 Section: devel
-Depends: qtchooser, ${misc:Depends}, ${shlibs:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: Qt 5 QML scene viewer
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
@@ -209,7 +209,7 @@ Description: Qt 5 QML scene viewer
 Package: qml
 Architecture: any
 Section: devel
-Depends: qtchooser, ${misc:Depends}, ${shlibs:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: Qt 5 QML viewer
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
