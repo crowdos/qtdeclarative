@@ -7,6 +7,7 @@
 	dh $@ --builddirectory=build --sourcedirectory=qtdeclarative --parallel
 
 override_dh_auto_configure:
+	touch qtdeclarative/.git
 	mkdir build && cd build && qmake ../qtdeclarative/
 
 override_dh_install:
@@ -17,6 +18,7 @@ override_dh_install:
 override_dh_auto_clean:
 	dh_auto_clean
 	rm -rf build
+	rm -rf qtdeclarative/.git
 
 override_dh_strip:
 	dh_strip --dbg-package=qtdeclarative5-dbg
