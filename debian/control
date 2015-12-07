@@ -110,7 +110,7 @@ Description: Qt 5 particles 2 QML module
 
 Package: qml-module-qtquick2
 Architecture: any
-Depends: libgl1-mesa-dri, ${misc:Depends}, ${shlibs:Depends}
+Depends: libgles2, ${misc:Depends}, ${shlibs:Depends}
 Description: Qt 5 Qt Quick 2 QML module
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
